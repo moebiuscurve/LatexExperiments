@@ -1,0 +1,172 @@
+%\documentclass{article} % say
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+
+\newcommand{\A}{\[\mathbb{A}\]}
+
+\let\casefive\relax
+%\newcommand{\casefive}[10]{\[\begin{cases}#1&\text{ }#2\\#3&\text{ }#4\\#5&\text{ }#6\\#7&\text{ }#8\\#9&\text{ }#10\end{cases}\]} 
+
+\newcommand{\casefour}[8]{\[\begin{cases}#1 &\text{ }#2\\#3 &\text{ }#4\\#5 &\text{ }#6\\#7 &\text{ }#8\end{cases}\]} 
+
+\newcommand{\casethree}[6]{\[\begin{cases}#1&\text{ }#2\\#3&\text{ }#4\\#5&\text{ }#6\end{cases}\]} 
+
+\newcommand{\casetwo}[4]{\[\begin{cases}#1&\text{ }#2\\#3 &\text{ }#4\end{cases}\]}
+
+\newcommand{\C}{\[\mathbb{C}\]}
+
+\let\c\relax
+\newcommand{\c}{\[\subset\]}
+
+\let\ddx\relax
+\newcommand{\ddx}[1]{\[\frac{d #1}{dx}\]} 
+
+\let\ddx\relax
+\newcommand{\ddx}{\[\frac{d}{dx}\]}
+
+\let\ddy\relax
+\newcommand{\ddy}[1]{\[\frac{d #1}{dy}\]} 
+
+\let\ddy\relax
+\newcommand{\ddy}{\[\frac{d}{dy}\]} 
+
+\let\d\relax
+\newcommand{\d}{\[\partial\]} 
+
+\newcommand{\ecd}[3]{\[\sqrt{(#1_1-#2_1)^2+\dots+(#1_#3-#2_#3)^2}\]} 
+
+\let\e\relax
+\newcommand{\e}[1]{\[{\in}#1\]} 
+
+\newcommand{\E}[2]{\[\sum_{#1}^{#2}\]} 
+
+\newcommand{\fep}[2]{\[\left(#1-#2,#1+#2\right)\]} 
+
+\newcommand{\finv}{\[f^{-1}\]} 
+
+\newcommand{\fmv}[3]{\[#1:{#2}\to{#3}\]} 
+
+\newcommand{\fm}[2]{\[f:{#1}\to{#2}\]} 
+
+\newcommand{\fvinv}[1]{\[#1^{-1}\]} 
+
+\newcommand{\fx}[1]{\[f(x)=#1\]} 
+
+\newcommand{\f}{\[f(x)\]} 
+
+\newcommand{\gof}[2]{\[#1{\circ}#2\]} 
+
+\let\H\relax
+\newcommand{\H}{\[\mathbb{H}\]} 
+
+\let\null\relax
+\newcommand{\null}{\[\emptyset\]} 
+
+\newcommand{\oball}[2]{\[\left(#1-#2,#1+#2\right)\]} 
+
+\newcommand{\oo}{\[\infty\]} 
+
+\newcommand{\oS}[2]{\[\oint_{#1}^{#2}\]} 
+
+\newcommand{\ox}{\[\otimes\]} 
+
+\let\O\relax
+\newcommand{\O}{\[\bigcirc\]} 
+
+\let\o\relax
+\newcommand{\o}{\[\circ\]} 
+
+\newcommand{\polyv}[3]{\[#1_{0}+#1_{1}#2+\dots+#1_{#3}#2^{#3}\]} 
+
+\newcommand{\poly}[2]{\[#1_{0}+#1_{1}#2+\dots+#1_{n}#2^{n}\]} 
+
+\let\P\relax
+\newcommand{\P}[1]{\[\Pr(#1)\]} 
+
+\newcommand{\Q}{\[\mathbb{Q}\]} 
+
+%\let\root\relax
+%\newcommand{\root}[2]{\[\sqrt[#1]{#2}\]} 
+
+\newcommand{\R}{\[\mathbb{R}\]} 
+
+\newcommand{\Rp}{\[\mathbb{R}^{+}\]} 
+
+\newcommand{\Rs}{\[\mathbb{R}^{*}\]} 
+
+\newcommand{\Rx}{\[\mathbb{R}^{\times}\]} 
+
+\newcommand{\set}[1]{\[\{#1\}\]} 
+
+\newcommand{\SSS}[6]{\[\int_{#1}^{#2}\int_{#3}^{#4}\int_{#5}^{#6}\]} 
+
+\let\SS\relax
+\newcommand{\SS}[4]{\[\int_{#1}^{#2}\int_{#3}^{#4}\]} 
+
+\let\S\relax
+\newcommand{\S}[2]{\[\int_{#1}^{#2}\]} 
+
+\newcommand{\tbl}[2]{\[\begin{tabular}{#1}#2\end{tabular}\]}  
+
+\newcommand{\w}{\[\omega\]} 
+
+\newcommand{\xdel}[2]{\[\left(#1-#2,#1+#2\right)\]} 
+
+\newcommand{\x}{\[\times\]} 
+
+\newcommand{\Z}{\[\mathbb{Z}\]} 
+
+\iffalse
+\begin{document}
+
+
+\[{\backslash}A \to\]\A
+%\[{\backslash}casefive\{1\}\{2\}\{3\}\{4\}\{5\}\{6\}\{7\}\{8\}\{9\}\{10\}\to\]\casefive{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}
+\[{\backslash}casefour\{1\}\{2\}\{3\}\{4\}\{5\}\{6\}\{7\}\{8\} \to\]\casefour{1}{2}{3}{4}{5}{6}{7}{8}
+\[{\backslash}casethree\{1\}\{2\}\{3\}\{4\}\{5\}\{6\} \to\]\casethree{1}{2}{3}{4}{5}{6}
+\[{\backslash}casetwo\{1\}\{2\}\{3\}\{4\} \to\]\casetwo{1}{2}{3}{4}
+\[{\backslash}C \to\]\C
+\[{\backslash}c \to\]\c
+\[{\backslash}ddx\{arg\} \to\]\ddx{ arg}
+\[{\backslash}ddx \to\]\ddx
+\[{\backslash}ddy\{arg\} \to\]\ddy{ arg}
+\[{\backslash}ddy \to\]\ddy
+\[{\backslash}d\to\] \d
+\[{\backslash}e\{G\} \to\]\e{G}
+\[{\backslash}E\{0\}\{a\}\to\] \E{0}{a}
+\[{\backslash}fep\{a\}\{b\} \to\]\fep{a}{b}
+\[{\backslash}finv \to\]\finv
+\[{\backslash}fmv\{g\}\{one\}\{two\} \to\]\fmv{g}{one}{two}
+\[{\backslash}fm\{one\}\{two\} \to\]\fm{one}{two}
+\[{\backslash}fvinv\{g\} \to\]\fvinv{g}
+\[{\backslash}fx\{x\hat{}2\}\to\]\fx{x^2}
+\[{\backslash}f \to\]\f
+\[{\backslash}gof\{g\}\{f\} \to\]\gof{g}{f}
+\[{\backslash}H \to\]\H
+\[{\backslash}null \to\]\null
+\[{\backslash}oball\{a\}\{b\} \to\]\oball{a}{b}
+\[{\backslash}oo\to\] \oo
+\[{\backslash}oS\{0\}\{a\}\to\] \oS{0}{a}
+\[{\backslash}ox\to\] \ox
+\[{\backslash}O \to\] \O
+\[{\backslash}o \to\] \o
+\[{\backslash}polyv\{a\}\{x\}\{k\} \to\] \polyv{a}{x}{k}
+\[{\backslash}poly\{a\}\{x\} \to\] \poly{a}{x}
+\[{\backslash}P\{A|B\}\to\] \P{A|B}
+\[{\backslash}Q \to\]\Q
+%\[{\backslash}root\{3\}\{fine\}\to\] \root{3}{fine}
+\[{\backslash}R \to\] \R
+\[{\backslash}Rp \to\] \Rp
+\[{\backslash}Rs \to\] \Rs
+\[{\backslash}Rx \to\] \Rx
+\[{\backslash}set\{1,2,3,4\} \to\]\set{1,2,3,4}
+\[{\backslash}SS\{0\}\{a\}\{0\}\{b\}\{0\}\{c\}\to\] \SSS{0}{a}{0}{b}{0}{c}
+\[{\backslash}SS\{0\}\{a\}\{0\}\{b\}\to\] \SS{0}{a}{0}{b}
+\[{\backslash}S\{0\}\{a\}\to\] \S{0}{a}
+\[{\backslash}tbl\{|c|c|\}\{{\backslash}{\backslash} hline\] a\&b \[{\backslash}{\backslash}\] c\&d\[\} \to\]\tbl{|c|c|}{\hline a&b \\\hline c&d \\\hline}
+\[{\backslash}w\to\] \w
+\[{\backslash}xdel\{a\}\{b\} \to\]\xdel{a}{b}
+\[{\backslash}x\to\] \x
+\[{\backslash}Z \to\]\Z
+\end{document}
+\fi

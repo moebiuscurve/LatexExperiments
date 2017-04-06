@@ -1,0 +1,18 @@
+\documentclass[tikz]{standalone}
+\tikzset{near start abs/.style={xshift=1cm}}
+
+\begin{document}
+\begin{tikzpicture}
+    % place nodes
+    \node[draw] at (0, 0)   (a) {A};
+    \node[draw] at (3, 0)   (b) {B};
+
+    \node[draw] at (0, -2)  (c)     {C};
+    \node[draw] at (5, -2)  (d)     {D};
+
+    % draw edges
+    \draw[] (a) node[above,xshift=1cm] {$x(kT)$} -- (b);
+    \draw[] (c) node[above,xshift=1cm] {$y(kT)$} -- (d);
+    \draw (0,-3) node[above,near start abs] {Test} -- ++(7,0);
+\end{tikzpicture}
+\end{document}

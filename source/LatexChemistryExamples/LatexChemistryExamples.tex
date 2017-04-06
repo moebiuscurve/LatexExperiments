@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{chemfig}
+\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
+\begin{document}
+
+\setcrambond{2pt}{}{}
+\chemfig{
+  HO-[2,.5,2]?<[7,.7](-[2,.5]OH)-[,,,,line width=2.4pt](-[6,.5]OH)>[1,.7]
+    (-[:-65,.7]O-[:65,.7]?[b](-[2,.7]CH_2OH)<[:-60,.707](-[6,.5]OH)
+      -[,,,,line width=2.4pt](-[2,.5,,2]HO)>[:60,.707](-[6,.5]CH_2OH)-[:162,.9]O?[b])
+  -[3,.7]O-[4]?(-[2,.3]-[3,.5]HO)}\\\\\\
+
+\setatomsep{2em}
+\chemfig{
+  H_3C-[:72]{\color{blue}N}
+    *5(-
+      *6(-(={\color{red}O})-{\color{blue}N}(-CH_3)-(={\color{red}O})-{\color{blue}N}(-CH_3)-=)
+    --{\color{blue}N}=-)}\\\\\\
+
+
+\chemfig{(-[:0,1.5,,,draw=none]\scriptstyle\color{red}0)
+(-[1]1)(-[:45,1.5,,,draw=none]\scriptstyle\color{red}45)
+(-[2]2)(-[:90,1.5,,,draw=none]\scriptstyle\color{red}90)
+(-[3]3)(-[:135,1.5,,,draw=none]\scriptstyle\color{red}135)
+(-[4]4)(-[:180,1.5,,,draw=none]\scriptstyle\color{red}180)
+(-[5]5)(-[:225,1.5,,,draw=none]\scriptstyle\color{red}225)
+(-[6]6)(-[:270,1.5,,,draw=none]\scriptstyle\color{red}270)
+(-[7]7)(-[:315,1.5,,,draw=none]\scriptstyle\color{red}315)
+-0}\\\\\\
+
+\chemfig{H-[:217.75]O-[:104.5+37.75]H}
+\\\\\\
+
+\chemfig{O(-[:37.75]H)(-[:104.5+37.75]H)}
+\\\\\\
+\chemfig{C(-[:0]H)(-[:90]H)(-[:180]H)(-[:270]H)}\\\\\\
+
+\chemfig{**6(------)}\\\\\\
+
+\chemfig{**5(-----)}\\
+\chemfig{A-B}\\
+\chemfig{A=B}\\
+\chemfig{A~B}\\
+\chemfig{A>B}\\
+\chemfig{A<B}\\
+\chemfig{A>:B}\\
+\chemfig{A<:B}\\
+\chemfig{A>|B}\\
+\chemfig{A<|B}\\\\\\
+
+
+
+\lewis{0.2.4.6.,C}\\\\\\
+
+\chemfig{H-[:52.24]\lewis{1:3:,O}-[::-104.48]H}\\
+
+
+\end{document}
